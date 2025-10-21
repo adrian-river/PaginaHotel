@@ -16,7 +16,8 @@
       crossorigin="anonymous"
     ></script>
     <!---->
-    <script src="../navbar.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="./navbar.js"></script>
     <title>HOTEL ALPHA</title>
   </head>
   <body>
@@ -28,13 +29,13 @@
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/images/hotel1.jpg" class="d-block w-100" />
+          <img src="./images/hotel1.jpg" class="d-block w-100" />
         </div>
         <div class="carousel-item">
-          <img src="/images/hotel2.jpg" class="d-block w-100" />
+          <img src="./images/hotel2.jpg" class="d-block w-100" />
         </div>
         <div class="carousel-item">
-          <img src="/images/hotel3.jpg" class="d-block w-100" />
+          <img src="./images/hotel3.jpg" class="d-block w-100" />
         </div>
       </div>
       <button
@@ -68,7 +69,7 @@
           <div class="col">
             <div class="text-center">
               <img
-                src="/images/hotel5.jpg"
+                src="./images/hotel5.jpg"
                 class="d-block mx-auto img-fluid"
                 alt="Descripción de la imagen"
               />
@@ -78,7 +79,7 @@
           <div class="col">
             <div class="text-center">
               <img
-                src="/images/hotel4.jpg"
+                src="./images/hotel4.jpg"
                 class="d-block mx-auto img-fluid"
                 alt="Descripción de la imagen"
               />
@@ -87,7 +88,7 @@
           <div class="col">
             <div class="text-center my-5">
               <img
-                src="/images/hotel6.jpg"
+                src="./images/hotel6.jpg"
                 class="d-block mx-auto img-fluid"
                 alt="Descripción de la imagen"
               />
@@ -96,62 +97,47 @@
         </div>
       </div>
 
-      <div class="container- my-5 mb-0">
-        <footer style="background-color: #eee6d3">
-          <div class="container p-5">
-            <div class="row">
-              <div class="col-lg-6 col-md-12 mb-5">
-                <h5 class="mb-4 text-dark">footer content</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                  atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                  corporis vitae repudiandae aliquam voluptatem veniam, est
-                </p>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-4">
-                <h5 class="mb-3 text-dark">links</h5>
-                <ul class="list-unstyled mb-0">
-                  <li class="mb-1">
-                    <a href="#!" style="color: #4f4f4f">FAQ</a>
-                  </li>
-                  <li class="mb-1">
-                    <a href="#!" style="color: #4f4f4f">Classes</a>
-                  </li>
-                  <li class="mb-1">
-                    <a href="#!" style="color: #4f4f4f">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="#!" style="color: #4f4f4f">Safety</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-4">
-                <h5 class="mb-1 text-dark">opening hours</h5>
-                <table class="table" style="border-color: #666">
-                  <tbody>
-                    <tr>
-                      <td>Mon - Fri:</td>
-                      <td>8am - 9pm</td>
-                    </tr>
-                    <tr>
-                      <td>Sat - Sun:</td>
-                      <td>8am - 1am</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div
-            class="text-center p-3"
-            style="background-color: rgba(0, 0, 0, 0.2)"
-          >
-            © 2020 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/"
-              >MDBootstrap.com</a
-            >
-          </div>
-        </footer>
+  <footer class="footer bg-dark text-light text-center py-4">
+    <div class="container">
+      <div class="row justify-content-center align-items-center mb-4">
+        <div class="col-md-3">
+          <img src="./images/logo.png" class="footer-logo mb-2" height="80" width="80">
+        </div>
+        <div class="col-md-5 input-field">
+          <form class="d-flex justify-content-center">
+            <input type="email" class="form-control me-2" placeholder="Correo electrónico">
+            <button class="btn btn-secondary px-3">Suscribirse</button>
+          </form>
+        </div>
+        <div class="col-md-2 mt-3 mt-md-0">
+          <a href="" class="text-light me-3"><img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/><i class="bi bi-facebook fs-5"></i></a>
+          <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-5"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-instagram fs-5"></i></a>
+        </div>
+      </div>
+
+      <hr class="border-secondary">
+
+
+      <ul class="nav justify-content-center mb-3">
+        <li class="nav-item nav-hover"><a href="#" class="nav-link text-light">Inicio</a></li>
+        <li class="nav-item nav-hover"><a href="#" class="nav-link text-light">Habitaciones</a></li>
+        <li class="nav-item nav-hover"><a href="#" class="nav-link text-light">Servicios</a></li>
+        <li class="nav-item nav-hover"><a href="#" class="nav-link text-light">Promociones</a></li>
+        <li class="nav-item nav-hover"><a href="#" class="nav-link text-light">Consulta</a></li>
+        <li class="nav-item nav-hover"><a href="#" class="nav-link text-light">Reservar Online</a></li>
+      </ul>
+
+      <p class="small mb-0">
+        Teléfono: <a class="text-light text-decoration-none">+51 999999999</a> /
+        Email: <a class="text-light text-decoration-none">info@hotelaplha.com</a>
+        <br>
+        Av. San Pedro 123 - Perú 
+      </p>
+
+    </div>
+  </footer>
+        </div>
       </div>
     </div>
   </body>
