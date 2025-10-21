@@ -4,11 +4,11 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-.input-field{
+.input-field {
   position: relative;
 }
-.input-field input{
-   width: 350px;
+.input-field input {
+  width: 350px;
   height: 60px;
   border-radius: 6px;
   font-size: 18px;
@@ -18,7 +18,7 @@
   color: #fff;
   outline: none;
 }
-.input-field label{
+.input-field label {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -28,14 +28,119 @@
   pointer-events: none;
   transition: 0.3s;
 }
-input:focus{
+input:focus {
   border: 2px solid #18ffff;
 }
 input:focus ~ label,
-input:valid ~ label{
+input:valid ~ label {
   top: 0;
   left: 15px;
   font-size: 16px;
   padding: 0 2px;
   background: #060b23;
+}
+
+.section-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.info-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+img.shadow {
+  transition: transform 0.3s ease;
+}
+
+img.shadow:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  font-weight: 700;
+  color: #0a1761;
+  margin-bottom: 2rem;
+}
+
+.modern-section {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  transition: 0.3s ease;
+}
+
+.modern-section:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.info-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.room-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.15);
+}
+
+.room-card img {
+  height: 230px;
+  object-fit: cover;
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #0a1761;
+}
+
+.service-card {
+  border: none;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  background: #0a1761;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.testimonial {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial h6 {
+  margin-top: 1rem;
+  font-weight: 600;
 }
