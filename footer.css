@@ -1,0 +1,52 @@
+.footer {
+  position: relative;
+}
+
+.footer .nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.footer .nav-link:hover {
+  color: #b3b3b3;
+}
+
+.btn-top:hover {
+  background-color: #ccc;
+  transform: scale(1.1);
+}
+
+.nav-hover a {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.nav-hover a span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.nav-hover a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #ffc107; /* color dorado elegante */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Efecto al pasar el mouse */
+.nav-hover a:hover span {
+  transform: translateY(-3px); /* El texto sube ligeramente */
+}
+
+.nav-hover a:hover::after {
+  width: 100%;
+}

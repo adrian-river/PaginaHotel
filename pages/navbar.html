@@ -1,77 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../navbar.css" />
-        <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../navbar.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
-      <div class="container">
-        <a class="navbar-brand zoom" href="../index.html"><img
-            src="/images/logo.png"
-            draggable="false"
-            height="80"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-collapse-init
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto align-items-center animation">
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="./habitaciones.html">
-                <img width="24" height="24" src="https://img.icons8.com/forma-bold-filled-sharp/24/bed.png" alt="bed"/>
-                <i class="fas fa-plus-circle pe-2"></i>Habitaciones</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="./restaurante.html"
-                ><i class="fas fa-bell pe-2">
-                    <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/cutlery.png" alt="cutlery"/>
-                </i>Restaurante</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#!"
-                ><i class="fas fa-heart pe-2">
-                    <img width="24" height="24" src="https://img.icons8.com/pastel-glyph/64/cocktail--v3.png" alt="cocktail--v3"/>
-                </i>Bar</a
-              >
-            </li>
-                <li class="nav-item">
-              <a class="nav-link mx-2" href="#!"
-                ><i class="fas fa-heart pe-2">
-                    <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/conference-call.png" alt="conference-call"/>
-                </i>Nosotros</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a class="btn btn-success btn-rounded" href="#!">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </body>
-</html>
+<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+  <div class="container">
+    <!-- LOGO -->
+    <a class="navbar-brand zoom" href="../index.html">
+      <img src="/images/logo.png" draggable="false" height="80" alt="Logo" />
+    </a>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- LINKS -->
+    <div class="collapse navbar-collapse bg-light bg-opacity-95 rounded-3 p-3 mt-2" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto align-items-center animation">
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="../pages/habitaciones.html">
+            <img width="24" height="24"
+              src="https://img.icons8.com/forma-bold-filled-sharp/24/bed.png"
+              alt="bed" />
+            Habitaciones
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="../pages/restaurante.html">
+            <img width="24" height="24"
+              src="https://img.icons8.com/ios-filled/50/cutlery.png"
+              alt="cutlery" />
+            Restaurante
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#!">
+            <img width="24" height="24"
+              src="https://img.icons8.com/pastel-glyph/64/cocktail--v3.png"
+              alt="cocktail" />
+            Bar
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#!">
+            <img width="24" height="24"
+              src="https://img.icons8.com/ios-filled/50/conference-call.png"
+              alt="conference-call" />
+            Nosotros
+          </a>
+        </li>
+
+        <li class="nav-item ms-3">
+          <a class="btn btn-success btn-rounded" href="#!">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

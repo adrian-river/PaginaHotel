@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgba(255, 255, 255, 0)
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -7,7 +7,7 @@
 }
 
 .zoom {
-  padding: 50px;
+  padding: 0px;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
 }
@@ -76,3 +76,4 @@
     }
   }
 }
+
