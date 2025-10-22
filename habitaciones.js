@@ -8,7 +8,7 @@ const infoHabitaciones = [
     extra: "Escritorio",
     frase:
       "Elegancia atemporal y confort incomparable que enriquecen tu estadía",
-    imagenHabitacion: "../images/habitaciones/luxury-room.jpg",
+    imagenHabitacion: "./images/habitaciones/luxury-room.jpg",
     tipoHabitacion: "suites",
   },
   {
@@ -19,7 +19,7 @@ const infoHabitaciones = [
     banio: "Baño de mármol completo",
     extra: "Vista panoramica",
     frase: "Estilo clásico y sofisticado",
-    imagenHabitacion: "../images/habitaciones/luxury-room2.jpg",
+    imagenHabitacion: "./images/habitaciones/luxury-room2.jpg",
     tipoHabitacion: "suites",
   },
   {
@@ -30,7 +30,7 @@ const infoHabitaciones = [
     banio: "Baño de mármol completo con ducha y jacuzzi",
     extra: "Sala y desayunador",
     frase: "Un legado de elegancia y confort",
-    imagenHabitacion: "../images/habitaciones/luxury-room3.jpg",
+    imagenHabitacion: "./images/habitaciones/luxury-room3.jpg",
     tipoHabitacion: "suites",
   },
   {
@@ -41,7 +41,7 @@ const infoHabitaciones = [
     banio: "Baño de porcelana con ducha",
     extra: "Televisor",
     frase: "Elegancia y serenidad",
-    imagenHabitacion: "../images/habitaciones/classic-room.jpg",
+    imagenHabitacion: "./images/habitaciones/classic-room.jpg",
     tipoHabitacion: "clasica",
   },
   {
@@ -52,7 +52,7 @@ const infoHabitaciones = [
     banio: "Baño de porcelana con ducha",
     extra: "Televisor",
     frase: "Comodidad en un entorno amplio",
-    imagenHabitacion: "../images/habitaciones/classic-room2.jpg",
+    imagenHabitacion: "./images/habitaciones/classic-room2.jpg",
     tipoHabitacion: "clasica",
   },
   {
@@ -64,7 +64,7 @@ const infoHabitaciones = [
     extra: "Sala independiente",
     frase:
       "Una verdadera obra de arte con ambientes separados y lujosos que te cautivarán",
-    imagenHabitacion: "../images/habitaciones/presidential-room.jpg",
+    imagenHabitacion: "./images/habitaciones/presidential-room.jpg",
     tipoHabitacion: "presidencial",
   },
   {
@@ -76,7 +76,7 @@ const infoHabitaciones = [
     extra: "Sala independiente",
     frase:
       "Grandiosa habitación llena de cultura, elegancia y comodidad con dos áreas separadas.",
-    imagenHabitacion: "../images/habitaciones/presidential-room2.jpg",
+    imagenHabitacion: "./images/habitaciones/presidential-room2.jpg",
     tipoHabitacion: "presidencial",
   },
   {
@@ -87,7 +87,7 @@ const infoHabitaciones = [
     banio: "Baño de mármol completo con jacuzzi",
     extra: "Walking closet",
     frase: "Amplios ambientes, obras de arte.",
-    imagenHabitacion: "../images/habitaciones/presidential-room3.jpg",
+    imagenHabitacion: "./images/habitaciones/presidential-room3.jpg",
     tipoHabitacion: "presidencial",
   },
 ];
