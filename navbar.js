@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navContainer = document.getElementById("navbar");
 
-  const inPagesFolder = window.location.pathname.includes("/pages/");
+  const inPagesFolder = window.location.pathname.includes("./pages");
 
-  const navPath = inPagesFolder ? "navbar.html" : "pages/navbar.html";
+  const navPath = inPagesFolder ? "navbar.html" : "./pages/navbar.html";
 
   fetch(navPath)
     .then(response => {
