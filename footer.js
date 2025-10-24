@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const footerContainer = document.getElementById("footer");
 
-  const inPagesFolder = window.location.pathname.includes("./pages");
-  const footerPath = inPagesFolder ? "footer.html" : "./pages/footer.html";
+  /* const inPagesFolder = window.location.pathname.includes("./pages");
+  const footerPath = inPagesFolder ? "footer.html" : "./pages/footer.html"; */
 
-  fetch(footerPath)
-    .then(response => {
+  fetch("/pages/footer.html")
+    .then((response) => {
       if (!response.ok) throw new Error("No se pudo cargar el footer");
       return response.text();
     })
-    .then(data => {
+    .then((data) => {
       footerContainer.innerHTML = data;
     })
-    .catch(error => console.error("Error al cargar el footer:", error));
+    .catch((error) => console.error("Error al cargar el footer:", error));
 });
