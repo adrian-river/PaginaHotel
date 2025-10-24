@@ -1,0 +1,132 @@
+/* 1. Contenedor HERO (Imagen de Fondo) */
+.hero-alpha-bar {
+  background-image: url(./images/bar/barnavhero.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 60%;
+
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+
+/* Estilo del menú en móvil */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    border-radius: 5px;
+  }
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  opacity: 0.8;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.bar-ambiente {
+  height: 350px;
+  width: auto;
+}
+
+.bar-ambiente:hover {
+  transform: scale(1.09);
+  filter: brightness(80%);
+  transform: translateY(-20px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.bar-session {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.bar-card {
+  position: relative;
+  flex: 1 1 33.33%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.bar-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bar-card .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  filter: grayscale(30%);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+  z-index: 10;
+}
+
+.bar-card:hover .card-img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.bar-card:hover .card-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
