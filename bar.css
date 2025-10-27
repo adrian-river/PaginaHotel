@@ -1,3 +1,7 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
 /* 1. Contenedor HERO (Imagen de Fondo) */
 .hero-alpha-bar {
   background-image: url(./images/bar/barnavhero.jpg);
