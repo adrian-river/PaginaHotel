@@ -10,14 +10,68 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!---->
-    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./popup.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>HOTEL ALPHA</title>
   </head>
 
   <body>
+    <!-- POPUP -->
+    <div class="popup-overlay" id="popup">
+      <div class="popup-container">
+        <button class="close-btn" onclick="closePopup()">×</button>
+
+        <div class="popup-header">
+          <div class="brands">
+            <div class="brand-logo">Alpha Hotel</div>
+          </div>
+          <h1 class="main-title">Ten un respiro y crea un recuerdo.</h1>
+        </div>
+
+        <div class="popup-content">
+          <p class="subtitle">Escápate este mes y vive el arte de una</p>
+          <h3 class="offer-title">Experiencia Inolvidable</h3>
+
+          <div class="countdown-container">
+            <div class="countdown-item">
+              <span class="countdown-number" id="days">00</span>
+              <span class="countdown-label">Días</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="hours">00</span>
+              <span class="countdown-label">Horas</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="minutes">00</span>
+              <span class="countdown-label">Minutos</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="seconds">00</span>
+              <span class="countdown-label">Segundos</span>
+            </div>
+          </div>
+
+          <p class="subtitle">Disfruta de check-in/out flexible y</p>
+          <p class="subtitle">
+            20% de descuento en todas nuestras habitaciones*
+          </p>
+
+          <button class="cta-button">
+            <a href="./pages/reserva.html">Reserva hoy en nuestra web</a>
+          </button>
+
+          <p class="terms">*Aplican términos y condiciones.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Navbar (insertada por JS) -->
     <div id="navbar"></div>
 
@@ -96,7 +150,7 @@
               <p class="card-text">
                 Vista al mar, jacuzzi privado y desayuno incluido.
               </p>
-              <a href="/pages/habitaciones.html"
+              <a href="./pages/habitaciones.html"
                 ><button class="btn btn-primary w-100">Reservar</button></a
               >
             </div>
@@ -114,7 +168,7 @@
               <p class="card-text">
                 Espaciosa, con balcón y capacidad hasta 3 personas.
               </p>
-              <a href="/pages/habitaciones.html"
+              <a href="./pages/habitaciones.html"
                 ><button class="btn btn-primary w-100">Reservar</button></a
               >
             </div>
@@ -132,7 +186,7 @@
               <p class="card-text">
                 Ideal para parejas, decoración exclusiva y botella de vino.
               </p>
-              <a href="/pages/habitaciones.html"
+              <a href="./pages/habitaciones.html"
                 ><button class="btn btn-primary w-100">Reservar</button></a
               >
             </div>
@@ -222,5 +276,6 @@
     <!-- Tu JS -->
     <script src="./navbar.js"></script>
     <script src="./footer.js"></script>
+    <script src="./popup.js"></script>
   </body>
 </html>
