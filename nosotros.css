@@ -1,3 +1,7 @@
+*{
+    font-family: "Courier New", Courier, monospace;
+}
+
 :root {
   --primary-blue: #2e86ab;
   --secondary-blue: #a23b72;
