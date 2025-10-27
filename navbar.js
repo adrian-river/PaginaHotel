@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navContainer = document.getElementById("navbar");
 
-  /*  const inPagesFolder = window.location.pathname.includes("/pages");
+  const navPath = window.location.pathname.includes("/pages/")
+    ? "../pages/navbar.html"
+    : "./pages/navbar.html";
 
-  const navPath = inPagesFolder ? "navbar.html" : "./pages/navbar.html"; */
-
-  fetch("/pages/navbar.html")
+  fetch(navPath)
     .then((response) => {
       if (!response.ok) throw new Error("No se pudo cargar el navbar");
       return response.text();
